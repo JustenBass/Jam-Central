@@ -1,21 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from './components/NavBar';
+import Home from './pages/Home';
+import Artist from './pages/Artist';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    fetch("/hello")
-      .then((r) => r.json())
-      .then((data) => setCount(data.count));
-  }, []);
 
   return (
-    <div className="App">
-      <h1>Page Count: {count}</h1>
+    <BrowserRouter>
+    <NavBar />
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={ <Home /> } />
+        <Route path='/artists' element={ <Artist /> } />
+      </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
