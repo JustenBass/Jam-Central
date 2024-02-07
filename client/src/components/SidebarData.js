@@ -16,8 +16,8 @@ export const SidebarData = [
         cName: "nav-text",
     },
     {
-        title: "Signout",
-        path: "/search",
+        title: "Signup",
+        path: "/signup",
         icon: <FaIcons.FaSignOutAlt/>,
         cName: "nav-text",
     },
