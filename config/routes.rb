@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get '/hello', to: 'application#hello_world'
-
+  resources :users
   resources :artists, only: [:index]
   resources :albums, only: [:index]
   resources :songs, only: [:index]

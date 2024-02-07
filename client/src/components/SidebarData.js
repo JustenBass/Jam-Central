@@ -16,4 +16,10 @@ export const SidebarData = [
         icons: <FaIcons.FaSearch/>,
         cName: "nav-text",
     },
+    {
+        title: "Signout",
+        path: "/search",
+        icons: <FaIcons.FaSignOutAlt/>,
+        cName: "nav-text",
+    },
 ]

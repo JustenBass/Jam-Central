@@ -36,7 +36,7 @@
 .nav-menu {
   background-color: #232323;
   width: 250px;
-  height: 175px;
+  height: 230px;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -48,7 +48,7 @@
 .nav-menu.active {
   left: 0;
   transition: 650ms;
-  height: 175px;
+  height: 230px;
   border-radius: 5%;
 }
 
