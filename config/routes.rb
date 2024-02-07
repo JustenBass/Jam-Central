@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users
+  resources :users, only: [:create]
   resources :artists, only: [:index]
   resources :albums, only: [:index]
   resources :songs, only: [:index]
