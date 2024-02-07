@@ -1,5 +1,7 @@
 puts "Seeding Data 💦..."
 
+puts "Seeding Users..."
+user1 = User.create!(email: 'justenbass6036@gmail.com', username: 'JBass6036', password: 'sun', password_confirmation: 'sun')
 puts "Seeding Artist"
 artist1 = Artist.create!(artist: 'Taylor Swift', image: '', bio: 'bio here', top_artist: true)
 
